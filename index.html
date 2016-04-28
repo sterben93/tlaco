@@ -1,25 +1,148 @@
 <!DOCTYPE html>
 <html lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Title Page</title>
 
-		<!-- Bootstrap CSS -->
-    <link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Eduardo Romero Enrique">
+	<meta name="description" description="Sitio web con informacion de la ciudad de Tlacotalpan">
+	<meta name="keywords" description="Tlacotalpan, historia">
+	<title>Ciudad de Tlacotalpan</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
 
-		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
-		<!--[if lt IE 9]>
-			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
-	<body>
-		<h1 class="text-center">Hello World</h1>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"> </li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"> </li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="image/bienvenido.png" alt="First slide">
+						<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+							<h1 style="">Tlacotalpan</h1>
+							<p></p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="image/image3792.png" alt="Second slide" />
+						<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+							<h1 style="">Tlacotalpan</h1>
+							<p></p>
+						</div>
+					</div>
+					<div class="item">
+						<img src="image/image3563.png" alt="Third slide" />
+						<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+							<h1 style="">Tlacotalpan</h1>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
+		</div>
+		<div class="row">
+			<nav class="navbar navbar-inverse" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+					<a class="navbar-brand" href="#">Tlacotalpan</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav navbar">
+						<li><a href="#">Historia</a></li>
+						<li><a href="#">Galeria</a></li>
+						<li><a href="#">Restaurantes</a></li>
+						<li><a href="#">Hoteles</a></li>
+						<li><a href="#">Ubicacion</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</nav>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-	</body>
+		</div>
+		<div class="row container-fluid">
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+				<p class="text-justify">Tlacotalpan es una localidad y municipio del sureste del estado de Veracruz dentro de los límites de la Cuenca del Papaloapan,
+					en México, su nombre significa “tierra partida”. Ubicado en la costa del Golfo de México, es conocido por su tradición pesquera y
+					por los dos festivales anuales de música jarocha y décima que patrocina, especialmente interesante por formar un vínculo
+					cultural e histórico entre la música Andalucía, del centro-occidente de África y de las culturas nativas de Mesoamérica.
+					Es también un puerto fluvial, rodeado e irrigado por el río Papaloapan, que además posee en el municipio los ríos tributarios
+					de San Juan y Tesechoacán; cuenta con una extensión de 646.51 km², relativo al 0.89% del territorio total del estado y
+					se localiza a 90 km del puerto de Veracruz, a 110 km de la ciudad de Tuxtepec, a 203 km de la ciudad de Xalapa, capital
+					del estado y a aproximadamente a 500 km de la Ciudad de México. El centro histórico de Tlacotalpan fue declarado como Patrimonio
+					Cultural de la Humanidad por la Unesco en 1998.</p>
+					<img class="img-responsive" src="image/centro.jpg" alt="Chania" style="displar:block; margin:auto;">
+			</div>
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+
+				<div class="row">
+					<div class="col-xs-offset-0 col-sm-offset-9 col-md-offset-9 col-lg-offset-9">
+						<a href="https://www.facebook.com/TlacotalpanPCH"><img src="image/facebook.png" alt="facebook"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-0 col-sm-offset-9 col-md-offset-9 col-lg-offset-9">
+						<a href="https://twitter.com/gobtlacotalpan"><img src="image/twitter.png" alt="twitter"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-offset-0 col-sm-offset-9 col-md-offset-9 col-lg-offset-9">
+						<a href="https://plus.google.com/explore/tlacotalpan"><img src="image/google-plus.png" alt="google+"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a href="#" class="thumbnail">
+					<img data-src="#" alt="">
+					<div class="caption">
+						asdasdasd
+					</div>
+				</a>
+			</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a href="#" class="thumbnail">
+					<img data-src="#" alt="">
+					<div class="caption">
+						asdasdasd
+					</div>
+				</a>
+			</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a href="#" class="thumbnail">
+					<img data-src="#" alt="">
+					<div class="caption">
+						asdasdasd
+					</div>
+				</a>
+			</div>
+						<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+				<a href="#" class="thumbnail">
+					<img data-src="#" alt="">
+					<div class="caption">
+						asdasdasd
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
