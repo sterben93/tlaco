@@ -1,0 +1,22 @@
+section{
+    Margin:30px;
+    Border:Solid 2px #2a931f;
+    Background-Color:White;
+}
+Body{
+    Background:#6b6565
+}
+
+div > a {
+	display: block;
+    text-align: center;
+}
+
+footer {
+    margin-top: 40px;
+    background: #090a09;
+	color: white;
+			}
+            footer > div{
+                margin-top: 40px;
+            }
