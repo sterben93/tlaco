@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="" ng-app="">
 
 <head>
 	<meta charset="utf-8">
@@ -15,85 +15,21 @@
 	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/facebook.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
 </head>
 
 <body>
-
-
-	<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
 	<div class="container-fluid">
 		<!--Inico del header y del slider-->
-		<header>
-			<div class="row">
-				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
-						<li data-target="#carousel-example-generic" data-slide-to="1"> </li>
-						<li data-target="#carousel-example-generic" data-slide-to="2"> </li>
-					</ol>
-					<div class="carousel-inner">
-						<div class="item active">
-							<img src="image/bienvenido.png" alt="First slide">
-							<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
-								<h1 style="">Tlacotalpan</h1>
-								<p></p>
-							</div>
-						</div>
-						<div class="item">
-							<img src="image/image3792.png" alt="Second slide" />
-							<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
-								<h1 style="">Tlacotalpan</h1>
-								<p></p>
-							</div>
-						</div>
-						<div class="item">
-							<img src="image/image3563.png" alt="Third slide" />
-							<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
-								<h1 style="">Tlacotalpan</h1>
-								<p></p>
-							</div>
-						</div>
-					</div>
-					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-				</div>
-			</div>
+		<header ng-include="" src="'header.html'">
+
 		</header>
 		<!--Fin del header y del slider-->
 
 		<!--Inico del menu de navegacion-->
-		<nav>
-			<div class="row">
-				<nav class="navbar navbar-inverse" role="navigation">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-						<a class="navbar-brand" href="#">Tlacotalpan</a>
-					</div>
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav">
-							<ul class="nav navbar-nav">
-								<li><a href="#">Historia</a></li>
-								<li><a href="#">Galeria</a></li>
-								<li><a href="#">Restaurantes</a></li>
-								<li><a href="#">Hoteles</a></li>
-								<li><a href="#">Ubicacion</a></li>
-							</ul>
-						</ul>
+		<nav ng-include="" src="'nav.html'">
 
-					</div>
-					<!-- /.navbar-collapse -->
-				</nav>
-			</div>
 		</nav>
 		<!--fin del menu de navegacion-->
 		<!--inicio Par indicar que te gusta y compartirla-->
@@ -106,82 +42,80 @@
 		<div id="status">
 		</div>
 		<!--Fin Par indicar que te gusta y compartirla-->
+		<style>
+			section {
+				margin: 30px;
+				border: solid 2px #2a931f;
+				background-color: white;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			#tag {
+				margin-top: 20px;
+			}
+
+			.Flexible-container {
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 30px;
+				height: 0;
+				overflow: hidden;
+			}
+
+			.Flexible-container iframe,
+			.Flexible-container object,
+			.Flexible-container embed {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+
 		<section>
 			<div class="row">
-				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15124.384410230836!2d-95.66697098622681!3d18.61474673192634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c253e5f0d3b591%3A0xc62e8d1a20490db6!2sTlacotalpan%2C+Ver.!5e0!3m2!1ses!2smx!4v1462316138487"
-						width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<h3 class="container">Ubicacion geografica</h3>
+				<div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+
 				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					Tlacotalpan es una localidad y municipio del sureste del estado de Veracruz dentro de los límites de la Cuenca del Papaloapan,
-					en México, su nombre significa “tierra partida”. Ubicado en la costa del Golfo de México, es conocido por su tradición
-					pesquera y por los dos festivales anuales de música jarocha y décima que patrocina, especialmente interesante por formar
-					un vínculo cultural e histórico entre la música Andalucía, del centro-occidente de África y de las culturas nativas
-					de Mesoamérica.3 Es también un puerto fluvial, rodeado e irrigado por el río Papaloapan, que además posee en el municipio
-					los ríos tributarios de San Juan y Tesechoacán; cuenta con una extensión de 646.51 km², relativo al 0.89% del territorio
-					total del estado y se localiza a 90 km del puerto de Veracruz, a 110 km de la ciudad de Tuxtepec, a 203 km de la ciudad
-					de Xalapa, capital del estado y a aproximadamente a 500 km de la Ciudad de México. El centro histórico de Tlacotalpan
-					fue declarado como Patrimonio Cultural de la Humanidad por la Unesco en 1998
+
+				<div class="col-xs-12 col-sm6 col-md-6 col-lg-6 Flexible-container">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15124.384410230985!2d-95.66697098549186!3d18.61474673192465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c253e5f0d3b591%3A0xc62e8d1a20490db6!2sTlacotalpan%2C+Ver.!5e0!3m2!1ses-419!2smx!4v1462325385019"
+						height="500px" style="border:0" allowfullscreen style="display:block">
+		        </iframe>
 				</div>
+				<div class="col-xs-0 col-sm-3 col-md-3 col-lg-3">
+
+				</div>
+
 			</div>
-
-
-
-
-
+			<h3>Ubicacion</h3>
+			<p>Entre los paralelos 18° 20’ y 18° 43’ de latitud norte; los meridianos 95° 30’ y 95° 46’ de longitud oeste; altitud entre
+				5 y 10 m.</p>
+			<h3>Limites</h3>
+			<p>Colinda al norte con los municipios de Alvarado y Lerdo de Tejada; al este con los municipios de Lerdo de Tejada, Saltabarranca
+				y Santiago Tuxtla; al sur con los municipios de Santiago Tuxtla, Isla, José Azueta y Amatitlán; al oeste con los municipios
+				de Amatitlán, Acula y Alvarado</p>
+				CLIMA
+Cálido subhúmedo con lluvias en verano, de mayor humedad (74%), cálido húmedo con abundantes lluvias en verano
+(13%) y cálido subhúmedo con lluvias en verano, de humedad media (13%).
+Rango de temperatura
+Rango de precipitación
+24 – 28°C
+1 400 – 2 100 mm
 		</section>
 	</div>
 
-	<footer>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<a href="https://www.facebook.com/TlacotalpanPCH"><img src="image/facebook.png" alt="facebook"></a>
-		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<a href="https://twitter.com/gobtlacotalpan"><img src="image/twitter.png" alt="twitter"></a>
-		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<a href="https://plus.google.com/explore/tlacotalpan"><img src="image/google-plus.png" alt="google+"></a>
-		</div>
+	<footer ng-include="" src="'footer.html'">
 
-		<!-- CONTACT SECTION START -->
-		<div class="row text-center header animate-in" data-anim-type="fade-in-up">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h3>Contact Details </h3>
-				<hr/>
-			</div>
-		</div>
-		<div class="row animate-in" data-anim-type="fade-in-up">
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<div class="contact-wrapper">
-					<h3>We Are Social</h3>
-					<p>
-						Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-					</p>
-					<div class="social-below">
-						<a href="#" class="btn button-custom btn-custom-two"> Facebook</a>
-						<a href="#" class="btn button-custom btn-custom-two"> Twitter</a>
-						<a href="#" class="btn button-custom btn-custom-two"> Google +</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<div class="contact-wrapper">
-					<h3>Quick Contact</h3>
-					<h4><strong>Email : </strong> info@yuordomain.com </h4>
-					<h4><strong>Call : </strong> +55-15-2102-6500 </h4>
-					<h4><strong>Skype : </strong> YourSkypeHere </h4>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<div class="contact-wrapper">
-					<h3>Address : </h3>
-					<h4>Rua Fernando Silva, 190</h4>
-					<h4>Brazil</h4>
-				</div>
-			</div>
-		</div>
-		<!--CONTACT SECTION END-->
 	</footer>
+	<script>
+		var miAPlicacion = angular.module('include', []);
+	</script>
 </body>
 
 </html>

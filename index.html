@@ -28,34 +28,8 @@
 		<!--Fin del header y del slider-->
 
 		<!--Inico del menu de navegacion-->
-		<nav>
-			<div class="row">
-				<nav class="navbar navbar-inverse" role="navigation">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-						<a class="navbar-brand" href="#">Tlacotalpan</a>
-					</div>
-					<div class="collapse navbar-collapse navbar-ex1-collapse">
-						<ul class="nav navbar-nav">
-							<ul class="nav navbar-nav">
-								<li><a href="#">Historia</a></li>
-								<li><a href="#">Galeria</a></li>
-								<li><a href="#">Restaurantes</a></li>
-								<li><a href="#">Hoteles</a></li>
-								<li><a href="#">Ubicacion</a></li>
-							</ul>
-						</ul>
+		<nav ng-include="" src="'nav.html'">
 
-					</div>
-					<!-- /.navbar-collapse -->
-				</nav>
-			</div>
 		</nav>
 		<!--fin del menu de navegacion-->
 		<!--inicio Par indicar que te gusta y compartirla-->
@@ -160,55 +134,8 @@
 		</section>
 	</div>
 
-	<footer>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<a href="https://www.facebook.com/TlacotalpanPCH"><img src="image/facebook.png" alt="facebook"></a>
-		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<a href="https://twitter.com/gobtlacotalpan"><img src="image/twitter.png" alt="twitter"></a>
-		</div>
-		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<a href="https://plus.google.com/explore/tlacotalpan"><img src="image/google-plus.png" alt="google+"></a>
-		</div>
+	<footer ng-include="" src="'footer.html'">
 
-		<!-- CONTACT SECTION START -->
-		<div class="row text-center header animate-in" data-anim-type="fade-in-up">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<h3>Contact Details </h3>
-				<hr/>
-			</div>
-		</div>
-		<div class="row animate-in" data-anim-type="fade-in-up">
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<div class="contact-wrapper">
-					<h3>We Are Social</h3>
-					<p>
-						Aliquam tempus ante placerat, consectetur tellus nec, porttitor nulla.
-					</p>
-					<div class="social-below">
-						<a href="#" class="btn button-custom btn-custom-two"> Facebook</a>
-						<a href="#" class="btn button-custom btn-custom-two"> Twitter</a>
-						<a href="#" class="btn button-custom btn-custom-two"> Google +</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<div class="contact-wrapper">
-					<h3>Quick Contact</h3>
-					<h4><strong>Email : </strong> info@yuordomain.com </h4>
-					<h4><strong>Call : </strong> +55-15-2102-6500 </h4>
-					<h4><strong>Skype : </strong> YourSkypeHere </h4>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-				<div class="contact-wrapper">
-					<h3>Address : </h3>
-					<h4>Rua Fernando Silva, 190</h4>
-					<h4>Brazil</h4>
-				</div>
-			</div>
-		</div>
-		<!--CONTACT SECTION END-->
 	</footer>
 	<script>
 		var miAPlicacion = angular.module('include', []);
