@@ -22,14 +22,71 @@
 <body>
 	<div class="container-fluid">
 		<!--Inico del header y del slider-->
-		<header ng-include="" src="'header.html'">
+		<header>
+<div class="row">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"> </li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"> </li>
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="image/slider0.png" alt="First slide" width="100%">
+				<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+					<h1 style="">Tlacotalpan</h1>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="image/slider1.png" alt="Second slide" width="100%">
+				<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+					<h1 style="">Tlacotalpan</h1>
+					<p></p>
+				</div>
+			</div>
+			<div class="item">
+				<img src="image/slider2.png" alt="Third slide" width="100%">
+				<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+					<h1 style="">Tlacotalpan</h1>
+					<p></p>
+				</div>
+			</div>
+		</div>
+		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+</div>
 
 		</header>
 		<!--Fin del header y del slider-->
 
 		<!--Inico del menu de navegacion-->
-		<nav ng-include="" src="'nav.html'">
-
+		<nav>
+            <div class="row">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+            <a class="navbar-brand" href="index.html">Tlacotalpan</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav">
+                    <li><a href="historia.html">Historia</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="restaurantes.html">Restaurantes</a></li>
+                    <li><a href="hoteles.html">Hoteles</a></li>
+                    <li><a href="ubicacion.html">Ubicacion</a></li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+</div>
 		</nav>
 		<!--fin del menu de navegacion-->
 		<!--inicio Par indicar que te gusta y compartirla-->
@@ -117,9 +174,40 @@
             </p>
           </div>
 		</section>
+		<div class="text-center">
+		    <iframe width="420" height="315" src="https://www.youtube.com/embed/0LZvo-Oj-LM" frameborder="0" allowfullscreen></iframe>
+		</div>
 	</div>
 
-	<footer ng-include="" src="'footer.html'">
+	<footer>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <a href="https://www.facebook.com/TlacotalpanPCH"><img src="image/facebook.png" alt="facebook"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <a href="https://twitter.com/gobtlacotalpan"><img src="image/twitter.png" alt="twitter"></a>
+</div>
+<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <a href="https://plus.google.com/explore/tlacotalpan"><img src="image/google-plus.png" alt="google+"></a>
+</div>
+
+<!-- CONTACT SECTION START -->
+<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h3>Contact Details </h3>
+        <hr/>
+    </div>
+</div>
+<div class="row animate-in" data-anim-type="fade-in-up">
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+    </div>
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <div class="contact-wrapper">
+            <h4><strong>Nombre: </strong>Romero Enríquez Eduardo Daniel</h4>
+            <h4><strong>Email : </strong> ewuardo_pa@live.com.mx </h4>
+        </div>
+    </div>
+</div>
+<!--CONTACT SECTION END-->
 
 	</footer>
 	<script>
