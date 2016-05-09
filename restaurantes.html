@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="" ng-app="">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Eduardo Romero Enrique">
+	<meta name="description" description="Sitio web con informacion de la ciudad de Tlacotalpan">
+	<meta name="keywords" description="Tlacotalpan, historia">
+	<title>Ciudad de Tlacotalpan</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/general.css">
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/facebook.js"></script>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-route.min.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<!--Inico del header y del slider-->
+		<header ng-include="" src="'header.html'">
+
+		</header>
+		<!--Fin del header y del slider-->
+
+		<!--Inico del menu de navegacion-->
+		<nav ng-include="" src="'nav.html'">
+
+		</nav>
+		<!--fin del menu de navegacion-->
+		<!--inicio Par indicar que te gusta y compartirla-->
+		<div class="fb-like" data-share="true" data-width="450" data-show-faces="true">
+			<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+		</div>
+
+
+		<div id="status">
+		</div>
+		<!--Fin Par indicar que te gusta y compartirla-->
+		<style>
+			section {
+				margin: 30px;
+				border: solid 2px #2a931f;
+				background-color: white;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			#tag {
+				margin-top: 20px;
+			}
+		</style>
+		<section>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/rest_dona_lala.jpg" alt="" style="width:250px;height:150px">
+        <div class="caption">
+			<h3 class="text-center">Restaurante de Doña Lala</h3>
+			<p>
+			    Dirección: Venustiano Carranza #11
+			</p>
+			<p>
+			    Teléfono: 01 288 88 425 80
+			</p>
+			<p>
+			    Contacto: donalala-rest@tlaco.com.mx
+			</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/rest_rokola.JPEG" alt="" style="width:250px;height:150px">
+        <div class="caption">
+			<h3 class="text-center">La Rokola</h3>
+			<p>
+			    Dirección: Venustiano Carranza # 11
+			</p>
+			<p>
+			    Teléfono: 01 288 107 0518
+			</p>
+			<p>
+			    Contacto: donalala@tlaco.com.mx
+			</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/rest_casa_del_rio.jpg" alt="" style="width:250px;height:150px">
+        <div class="caption">
+			<h3 class="text-center">Restaurante Casa del Rio</h3>
+			<p>
+			    Dirección: Miguel Z. Cházaro # 39
+			</p>
+			<p>
+			    Teléfono: 01 288 88 419 47
+			</p>
+			<p>
+			    Coctacto: casadelrio@tlaco.com.mx
+			</p>
+		</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <img src="image/rest_chaneque.jpg" alt="" style="width:250px;height:150px">
+        <div class="caption">
+			<h3 class="text-center">El Chaneque</h3>
+			<p>
+			    Dirección: Eduardo Lara y José María Iglesias
+			</p>
+			<p>
+			    Teléfono: 01 288 884 34 71
+			</p>
+			<p>
+			    Contacto: donamoncha@tlaco.com.mx
+			</p>
+		</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+    <div class="col-md-4">
+      <div  class="thumbnail">
+        <img src="image/rest.jpg" alt="" style="width:250px;height:150px">
+        <div class="caption">
+			<h3 class="text-center">Portal del Angel Pardiñolas</h3>
+			<p>
+			    Dirección: En la Plazuela de la Campana # 115
+			</p>
+			<p>
+			    Teléfono: 2291 52 56 74
+			</p>
+		</div>
+      </div>
+    </div>
+  </div>
+		</section>
+	</div>
+
+	<footer ng-include="" src="'footer.html'">
+
+	</footer>
+	<script>
+		var miAPlicacion = angular.module('include', []);
+	</script>
+</body>
+
+</html>
+
