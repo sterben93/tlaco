@@ -18,73 +18,73 @@
 </head>
 
 <body>
-	<div class="container-fluid">
+	<div id="body">
 		<!--Inico del header y del slider-->
 		<header>
-            <div class="row">
-	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
-			<li data-target="#carousel-example-generic" data-slide-to="1"> </li>
-			<li data-target="#carousel-example-generic" data-slide-to="2"> </li>
-		</ol>
-		<div class="carousel-inner">
-			<div class="item active">
-				<img src="image/slider0.png" alt="First slide" width="100%">
-				<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
-					<h1 style="">Tlacotalpan</h1>
-					<p></p>
+			<div class="row">
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carousel-example-generic" data-slide-to="0" class="active"> </li>
+						<li data-target="#carousel-example-generic" data-slide-to="1"> </li>
+						<li data-target="#carousel-example-generic" data-slide-to="2"> </li>
+					</ol>
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="image/slider0.png" alt="First slide" width="100%">
+							<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+								<h1 style="">Tlacotalpan</h1>
+								<p></p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="image/slider1.png" alt="Second slide" width="100%">
+							<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+								<h1 style="">Tlacotalpan</h1>
+								<p></p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="image/slider2.png" alt="Third slide" width="100%">
+							<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
+								<h1 style="">Tlacotalpan</h1>
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+					<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 				</div>
 			</div>
-			<div class="item">
-				<img src="image/slider1.png" alt="Second slide" width="100%">
-				<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
-					<h1 style="">Tlacotalpan</h1>
-					<p></p>
-				</div>
-			</div>
-			<div class="item">
-				<img src="image/slider2.png" alt="Third slide" width="100%">
-				<div class="carousel-caption" style=" background-color:rgba(0,0,0,0.6);">
-					<h1 style="">Tlacotalpan</h1>
-					<p></p>
-				</div>
-			</div>
-		</div>
-		<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-		<a class="right carousel-control" href="#carousel-example-generic" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-	</div>
-</div>
 
 		</header>
 		<!--Fin del header y del slider-->
 
 		<!--Inico del menu de navegacion-->
 		<nav>
-<div class="row">
-    <nav class="navbar navbar-inverse" role="navigation">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<div class="row">
+				<nav class="navbar navbar-inverse" role="navigation">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-            <a class="navbar-brand" href="index.html">Tlacotalpan</a>
-        </div>
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav">
-                <ul class="nav navbar-nav">
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="restaurantes.html">Restaurantes</a></li>
-                    <li><a href="hoteles.html">Hoteles</a></li>
-                    <li><a href="ubicacion.html">Ubicacion</a></li>
-                </ul>
-            </ul>
-        </div>
-    </nav>
-</div>
+						<a class="navbar-brand" href="index.html">Tlacotalpan</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-ex1-collapse">
+						<ul class="nav navbar-nav">
+							<ul class="nav navbar-nav">
+								<li><a href="historia.html">Historia</a></li>
+								<li><a href="galeria.html">Galeria</a></li>
+								<li><a href="restaurantes.html">Restaurantes</a></li>
+								<li><a href="hoteles.html">Hoteles</a></li>
+								<li><a href="ubicacion.html">Ubicacion</a></li>
+							</ul>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</nav>
 		<!--fin del menu de navegacion-->
 		<!--inicio Par indicar que te gusta y compartirla-->
@@ -98,12 +98,6 @@
 		</div>
 		<!--Fin Par indicar que te gusta y compartirla-->
 		<style>
-			section {
-				margin: 30px;
-				border: solid 2px #2a931f;
-				background-color: white;
-			}
-
 			p {
 				font-size: 18px;
 			}
@@ -112,7 +106,7 @@
 				margin-top: 20px;
 			}
 		</style>
-		<section>
+		<section id="contenido">
 			<div class="row container-fluid">
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<p class="text-justify">Tlacotalpan es una localidad y municipio del sureste del estado de Veracruz dentro de los límites de la Cuenca del Papaloapan,
@@ -190,39 +184,35 @@
 	</div>
 
 	<footer>
-        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <a href="https://www.facebook.com/TlacotalpanPCH"><img src="image/facebook.png" alt="facebook"></a>
-</div>
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <a href="https://twitter.com/gobtlacotalpan"><img src="image/twitter.png" alt="twitter"></a>
-</div>
-<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-    <a href="https://plus.google.com/explore/tlacotalpan"><img src="image/google-plus.png" alt="google+"></a>
-</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<a href="https://www.facebook.com/TlacotalpanPCH"><img src="image/facebook.png" alt="facebook"></a>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<a href="https://twitter.com/gobtlacotalpan"><img src="image/twitter.png" alt="twitter"></a>
+		</div>
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+			<a href="https://plus.google.com/explore/tlacotalpan"><img src="image/google-plus.png" alt="google+"></a>
+		</div>
 
-<!-- CONTACT SECTION START -->
-<div class="row text-center header animate-in" data-anim-type="fade-in-up">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h3>Contact Details </h3>
-        <hr/>
-    </div>
-</div>
-<div class="row animate-in" data-anim-type="fade-in-up">
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-    </div>
-    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <div class="contact-wrapper">
-            <h4><strong>Nombre: </strong>Romero Enríquez Eduardo Daniel</h4>
-            <h4><strong>Email : </strong> ewuardo_pa@live.com.mx </h4>
-        </div>
-    </div>
-</div>
-<!--CONTACT SECTION END-->
-
+		<!-- CONTACT SECTION START -->
+		<div class="row text-center header animate-in" data-anim-type="fade-in-up">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h3>Contacto </h3>
+				<hr/>
+			</div>
+		</div>
+		<div class="row animate-in" data-anim-type="fade-in-up">
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+				<div class="contact-wrapper">
+					<h4><strong>Nombre: </strong>Romero Enríquez Eduardo Daniel</h4>
+					<h4><strong>Email : </strong> ewuardo_pa@live.com.mx </h4>
+				</div>
+			</div>
+		</div>
+		<!--CONTACT SECTION END-->
 	</footer>
-	<script>
-		var miAPlicacion = angular.module('include', []);
-	</script>
 </body>
 
 </html>
